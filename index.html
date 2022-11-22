@@ -31,14 +31,14 @@
     </noscript>
     <link
       rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      href="https://code.getmdl.io/1.3.0/material.pink-red.min.css"
       media="none"
       onload="if(media!='all')media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+        href="https://code.getmdl.io/1.3.0/material.pink-red.min.css"
       />
     </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -56,21 +56,36 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
+        <p id="text">What to know what movies you can watch? Input your age in the box and I'll tell you your "watchables"!</p>
         <img
-          src="./images/notebook-animation.svg"
+          src="./images/netflix.svg"
           alt="Computer"
-          width="25%"
-          height="25%"
+          width="350"
+          height="300"
         />
+        <form action="#" class="value">
+          My age:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              step="any"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="age"
+              placeholder="insert age"
+              aria-label="my age"
+            />
+            <span class="mdl-textfield__error">Input is not an age!</span>
+          </div>
+        </form>
+        <div id="watchable">My watchable movies: </div>
         <!-- Raised button with ripple -->
         <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+          onclick="ageRating()"
         >
           movie rating
         </button>
-        <div id="hello-world"></div>
       </main>
     </div>
   </body>

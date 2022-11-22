@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: rgb(244, 179, 192);
 }
 
 p {
@@ -33,7 +33,12 @@ p {
   padding-top: 15pt;
 }
 
-img {
-  float: right;
-  margin-right: 15px;
+#text {
+  font-size: 120%;
 }
+
+#watchable {
+  padding-bottom: 15px;
+  font-size: 110%;
+}
+
